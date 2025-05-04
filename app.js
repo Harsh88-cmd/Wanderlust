@@ -92,7 +92,6 @@ app.use((req,res,next)=>{
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 
-
 app.use("/listings", listingRouter)
 app.use("/listings/:id/reviews", reviewRouter)
 app.use("/", userRouter)
