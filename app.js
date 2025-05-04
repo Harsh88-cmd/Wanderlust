@@ -52,7 +52,7 @@ const store = MongoStore.create({
   autoRemove: "native",
 });
 
-store.on("error", () =>{
+store.on("error", (err) =>{
     console.log("Error in MONGO SESSION STORE", err)
 })
 
